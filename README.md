@@ -1,5 +1,4 @@
 # TichhopHTTT_Kiemtradieukiennuoingao
+https://nuoingao-accountable-bonobo-zc.au-syd.mybluemix.net
 
-npm intall
-npm start
-http://localhost:8080
+
