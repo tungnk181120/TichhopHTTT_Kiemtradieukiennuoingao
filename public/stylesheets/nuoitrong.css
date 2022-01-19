@@ -65,3 +65,22 @@ input, label{
 .positive span{
     color: rgb(27, 170, 46);
 }
+
+.result{
+
+    background-color: rgb(29, 59, 158);
+    margin-left: 300px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-right: 300px;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.msg{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
