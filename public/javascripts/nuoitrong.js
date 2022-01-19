@@ -255,7 +255,7 @@ function Chatluongnuoc(WQI1){
   return msg
 }
 
-function DanhGiaChatLuong(T,pH,DO,DoMan,DoKiem,DoTrong,PO4,COD,TSS){
+function DanhGiaChatLuong(T,pH,DO,DoMan,DoKiem,DoTrong,PO4,COD,TSS, NO2, NH4){
   count=0
   msg = []
   if (18<=T && T<=33)
@@ -273,7 +273,7 @@ function DanhGiaChatLuong(T,pH,DO,DoMan,DoKiem,DoTrong,PO4,COD,TSS){
   if (5<=DoMan && DoMan<=35)
     count+=1
   else
-    print("Độ mặn không phù hợp")
+    msg.push("Độ mặn không phù hợp")
   if (60<=DoKiem && DoKiem<=180)
     count+=1
   else
@@ -294,6 +294,14 @@ function DanhGiaChatLuong(T,pH,DO,DoMan,DoKiem,DoTrong,PO4,COD,TSS){
     count+=1
   else
     msg.push("Cần thay đổi nồng độ COD")
+  if (NO2<=0.05)
+    count+=1
+  else
+    msg.push("Cần thay đổi nồng độ NO2")
+  if (NH4<=0.3)
+    count+=1
+  else
+    msg.push("Cần thay đổi nồng độ NH4")
   console.log(msg)
   return msg
 }
@@ -313,13 +321,12 @@ function kiemtra(){
   var tss = document.getElementById('tss').value
   var cod = document.getElementById('cod').value
   var no2 = document.getElementById('no2').value
-  var nh4 = document.getElementById('nh4').value
 
-  console.log(DanhGiaChatLuong(nhietdo, ph, oxi, doman. dokiem, dotrong, po4, cod, tss))
+  console.log(DanhGiaChatLuong(nhietdo, ph, oxi, doman. dokiem, dotrong, po4, cod, tss, no2, nh4))
   WQI1=tinh_WQI(nhietdo,ph,oxi,no2,nh4,po4,cod,coliform);
 
   chattluongnuoc = Chatluongnuoc(WQI1)
-  danhgiachatluong = DanhGiaChatLuong(nhietdo, ph, oxi, doman. dokiem, dotrong, po4, cod, tss)
+  danhgiachatluong = DanhGiaChatLuong(nhietdo, ph, oxi, doman, dokiem, dotrong, po4, cod, tss, no2, nh4)
   console.log(WQI1)
   console.log(Chatluongnuoc(WQI1))
 
