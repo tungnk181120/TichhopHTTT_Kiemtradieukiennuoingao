@@ -22,115 +22,53 @@
                 <div class="column" style="background-color:#aaa;">
                     <label for="nhietdo">Nhiệt Độ (oC):</label>
                     <input type="number" id="nhietdo">
-                    <div class="element" id="nhietdothap">
-                        <span>Cần tăng nhiệt độ</span>
-                    </div>
-                    <div class="element" id="nhietdocao">
-                        <span>Cần giảm nhiệt độ</span>
-                    </div>
-                    <div class="element positive" id="nhietdothichhop">
-                        <span>Nhiệt độ thích hợp</span>
-                    </div>
+                    
                     <label for="doman">Độ mặn (/oo)</label>
                     <input type="number" id="doman">
-                    <div class="element" id="domanthap">
-                        <span>Cần tăng độ mặn</span>
-                    </div>
-                    <div class="element" id="domancao">
-                        <span>Cần giảm độ mặn</span>
-                    </div>
-                    <div class="element positive" id="domanthichhop">
-                        <span>Độ mặn thích hợp</span>
-                    </div>
+ 
                     <label for="dotrong">Độ trong (cm)</label>
                     <input type="number" id="dotrong">
-                    <div class="element" id="dotrongthap">
-                        <span>Cần tăng độ trong</span>
-                    </div>
-                    <div class="element" id="dotrongcao">
-                        <span>Cần giảm độ trong</span>
-                    </div>
-                    <div class="element positive" id="dotrongthichhop">
-                        <span>Độ trong thích hợp</span>
-                    </div>
+
                     <label for="ph">Độ PH</label>
                     <input type="number" id="ph">
-                    <div class="element" id="phthap">
-                        <span>Cần tăng pH</span>
-                    </div>
-                    <div class="element" id="phcao">
-                        <span>Cần giảm pH</span>
-                    </div>
-                    <div class="element positive" id="phthichhop">
-                        <span>pH thích hợp</span>
-                    </div>
+
+                   
                     <label for="dokiem">Độ kiềm (mg/l)</label>
                     <input type="number" id="dokiem">
-                    <div class="element" id="dokiemthap">
-                        <span>Cần tăng độ kiềm</span>
-                    </div>
-                    <div class="element" id="dokiemcao">
-                        <span>Cần giảm độ kiềm</span>
-                    </div>
-                    <div class="element positive" id="dokiemthichhop">
-                        <span>Độ kiềm thích hợp</span>
-                    </div>
+
+                    <label for="coliform">Coliform (mg/l) </label>
+                    <input type="number" id="coliform">
+
                 </div>
                 <div class="column" style="background-color:#bbb;">
-                    <label for="oxi">Độ oxi hòa tan (mg/l)</label>
+                    <label for="oxi">DO (mg/l)</label>
                     <input type="number" id="oxi">
-                    <div class="element" id="oxithap">
-                        <span>Cần tăng độ oxi hòa tan</span>
-                    </div>
-                    <div class="element positive" id="oxithichhop">
-                        <span>Độ oxi hòa tan thích hợp</span>
-                    </div>
 
-                    <label for="h2s">Sunphua hydro tự do H2S (mg/l)</label>
-                    <input type="number" id="h2s">
-                    <div class="element" id="h2scao">
-                        <span>Cần giảm H2S</span>
-                    </div>
-                    <div class="element positive" id="h2sthichhop">
-                        <span>H2S thích hợp</span>
-                    </div>
+                    <label for="po4">PO4 (mg/l)</label>
+                    <input type="number" id="po4">
+                    
 
-                    <label for="nh3">Amoniac NH3 (mg/l)</label>
-                    <input type="number" id="nh3">
-                    <div class="element" id="nh3cao">
-                        <span>Cần giảm Amoniac</span>
-                    </div>
-                    <div class="element positive" id="nh3thichhop">
-                        <span>Amoniac thích hợp</span>
-                    </div>
+                    <label for="tss">TSS (mg/l)</label>
+                    <input type="number" id="tss">
+                    
 
-                    <label for="nitrit">Nitrit NO2- (mg/l)</label>
-                    <input type="number" id="nitrit">
-                    <div class="element" id="nitritcao">
-                        <span>Cần giảm Nitrit</span>
-                    </div>
-                    <div class="element positive" id="nitritthichhop">
-                        <span>Nitrit thích hợp</span>
-                    </div>
+                    <label for="cod">COD (mg/l)</label>
+                    <input type="number" id="cod">
+                    
 
-                    <label for="chatran">Chất rắn lơ lửng (mg/l) </label>
-                    <input type="number" id="chatran">
-                    <div class="element" id="chatrancao">
-                        <span>Cần giảm chất rắn lơ lửng</span>
-                    </div>
-                    <div class="element positive" id="chatranthichhop">
-                        <span>Chất rắn lơ lửng thích hợp</span>
-                    </div>
+                    <label for="no2">NO2 (mg/l) </label>
+                    <input type="number" id="no2">
+
+                    <label for="nh4">NH4 (mg/l) </label>
+                    <input type="number" id="nh4">
+                   
                 </div>
             </div>
             
             <button type="submit" value="submit" class="btn-submit" onclick="return kiemtra()">Kiểm tra</button>
         <!--</form>-->
 
-        <div class="result">
-            <div class="element">
-                <span>Cần tăng nhiệt độ</span>
-            </div>
+        <div class="result" id="result">
         </div>
         
 
