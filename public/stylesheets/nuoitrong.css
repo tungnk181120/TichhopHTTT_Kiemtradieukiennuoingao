@@ -7,16 +7,16 @@ body {
 }
 .img-header{
     background-image: url("https://thuysanngocthuy.com/wp-content/uploads/2020/12/ngao-hoa.jpg");
-    height: 250px;
-    filter: brightness(40%);
+    height: 200px;
+    filter: brightness(70%);
 }
 
 .title{
     position: absolute;
     color: #fff;
-    top: 40%;
+    top: 30%;
     right: 32%;
-    left: 38%;
+    left: 36%;
     font-size: 32px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 100px;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 .column{
@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     width: 50%;
     padding: 50px;
+    padding-top: 30px;
     padding-top: 20px;
 }
 input, label{
@@ -48,8 +49,9 @@ input, label{
     font-size: 26px;
     border-radius: 200px;
     width: 200px;
-    margin-left: 620px;
+    margin-left: 640px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .element span{
@@ -71,11 +73,11 @@ input, label{
     background-color: rgb(29, 59, 158);
     margin-left: 300px;
     margin-bottom: 50px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-right: 300px;
     border-radius: 20px;
     padding: 20px;
-
+    display: none;
 }
 .msg{
     color: #fff;
@@ -83,4 +85,52 @@ input, label{
     padding: 10px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .title{
+        font-size: 24px;
+    }
+    .result{
+        padding: 10px;
+        margin-left: 260px;
+        margin-right: 260px;
+    }
+    .msg{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .btn-submit{
+        margin-left: 460px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .title{
+        font-size: 24px;
+        right: 24%;
+        left: 28%;
+    }
+    .result{
+        padding: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .msg{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .btn-submit{
+        margin-left: 280px;
+    }
+    .row{
+        padding: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .column{
+        padding: 10px;
+        padding-top: 10px;
+    }
 }
