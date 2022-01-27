@@ -1,5 +1,3 @@
-const res = require("express/lib/response")
-
 function WQI_DO(DO,T){
     DO_BAOHOA=14.652-0.41022*T+0.007991*T*T-0.000077774*T*T*T
     Percent_BAOHOA=DO/DO_BAOHOA*100
@@ -330,8 +328,11 @@ function kiemtra(){
   console.log(WQI1)
   console.log(Chatluongnuoc(WQI1))
 
+  
   str = ""
   result = document.getElementById('result')
+  result.style.display = "block"
+  window.location.href = "#result"
   str+= `<div class="msgs">
                         <span class="msg">${chattluongnuoc}</span>
                       </div>`
@@ -341,7 +342,6 @@ function kiemtra(){
                         </div>`
   result.innerHTML = str
   }
-
 }
 
 
